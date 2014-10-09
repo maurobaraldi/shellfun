@@ -14,7 +14,7 @@ alias killzombies="kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | aw
 
 # Kill all the processes that matches some string
 # 'destroy_all python' will kill -9 every process with 'python' on its name
-function destroy_all(){
+function killemall(){
     echo 'Are you sure? Are you sure? Are you sure? Are you sure? Are you sure?'
     ps x -o pid,command | grep "$@" | grep -v grep | cut -c1-5 | xargs kill -9
 }
