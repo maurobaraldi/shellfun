@@ -1,3 +1,4 @@
+#!/bin/bash
 # copy or link this file in to your home directory
 
 # Clean all .pyc, .swp, emacs tmp files under current directory recursively
@@ -7,7 +8,10 @@ function omo() {
 }
 
 # find any file containing specified string under current dir recursively
-alias whereiswaldo='find -type f | xargs grep -l'
+function whereiswaldo() {
+	echo "Where is $1?"
+	find . -type f -name $1*
+}
 
 # Kill zombie procecess
 alias alice="kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | awk '{print $2}'`"
