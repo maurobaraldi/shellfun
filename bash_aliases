@@ -14,7 +14,10 @@ function whereiswaldo() {
 }
 
 # Kill zombie procecess
-alias alice="kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | awk '{print $2}'`"
+function alice() {
+	kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | awk '{print $2}'`
+	echo "Zombies killed!"
+}
 
 # Kill all the processes that matches some string
 # 'killemall python' will kill -9 every process with 'python' on its name
