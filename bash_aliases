@@ -15,7 +15,7 @@ function whereiswaldo() {
 
 # Kill zombie procecess
 function alice() {
-	kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | awk '{print $2}'`
+	kill -9 `ps xaw -o state,ppid,fname | grep Z | grep -v PID | egrep -v lightdm | awk '{print $2}'`
 	echo "Zombies killed!"
 }
 
