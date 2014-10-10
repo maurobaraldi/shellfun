@@ -7,13 +7,13 @@ function omo() {
 }
 
 # find any file containing specified string under current dir recursively
-alias find_in_files='find -type f | xargs grep -l'
+alias whereiswaldo='find -type f | xargs grep -l'
 
 # Kill zombie procecess
-alias killzombies="kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | awk '{print $2}'`"
+alias alice="kill -9 `ps -xaw -o state -o ppid | grep Z | grep -v PID | awk '{print $2}'`"
 
 # Kill all the processes that matches some string
-# 'destroy_all python' will kill -9 every process with 'python' on its name
+# 'killemall python' will kill -9 every process with 'python' on its name
 function killemall(){
     echo 'Are you sure? Are you sure? Are you sure? Are you sure? Are you sure?'
     ps x -o pid,command | grep "$@" | grep -v grep | cut -c1-5 | xargs kill -9
