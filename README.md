@@ -43,7 +43,7 @@ source ~/.bash_aliases
 How to use it?
 ===============
 
-### OMO: Clean unwanted temporary files like Python's .pyc, VI's .swp, Emacs *~ files
+##### OMO: Clean unwanted temporary files like Python's .pyc, VI's .swp, Emacs *~ files
 
 ```bash
 cd myproject
@@ -55,7 +55,7 @@ Done! all those files were destroyed!
 ![OMO LAVA MAIS BRANCO](http://3.bp.blogspot.com/_b_lEbjab3xg/TSs2uqEKn5I/AAAAAAAAANE/2eqVC87EVZo/s1600/omo_tanquinho_blog.jpg)
 
 
-### WHEREISWALDO: Find all files containing some string
+##### WHEREISWALDO: Find all files containing some string
 
 ```bash
 cd myproject
@@ -67,7 +67,7 @@ Will list all those files where you used #TODO comment
 ![WALDO](http://www.madhouseyoyos.com/wp-content/uploads/2012/09/Waldo.jpg)
 
 
-### ALICE: The amazing zombie killer
+##### ALICE: The amazing zombie killer
 
 ```bash
 ps xaw
@@ -80,7 +80,7 @@ Done! all the zombies were killed!
 
 ![Alice Zombie Killer](http://d1fgn7wex1bhjn.cloudfront.net/assets/tarantulaV2/embedded_images/1347527274_resi_afterlife3d_bild1.jpg)
 
-### KILLEMALL: Kill all the processes matching the string specified
+##### KILLEMALL: Kill all the processes matching the string specified
 
 Wanna kill all Python processes?
 
